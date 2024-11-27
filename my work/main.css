@@ -1,0 +1,377 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.all{
+    background: #F5F4FC;
+    height: 60vh;
+    padding: 50px;
+    
+    
+
+}
+.nice{
+    background-color: #000;
+    width: 250px;
+    height: 400px;
+    position: absolute;
+    margin-top: 20px;
+    z-index: 999;
+    color: white;
+    padding: 20px;
+    display: none;
+}
+.show{
+    animation: pop .9s ease-in-out;
+    display: block;
+    z-index: 1000;
+    position: absolute;
+}
+
+@keyframes pop {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }   
+}
+.menu .span1{
+    transform: rotate(45deg) translate(8px,8px);
+    width: 35px;
+    transition: .3s linear;
+}
+.menu .span2{
+    transform: rotate(-45deg) ;
+    width: 35px;
+    transition: .3s linear;
+}
+.nice a{
+    text-decoration: none;
+    color: #75ecfc;
+    cursor: pointer;
+}
+.whatis{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.dat{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+}
+.whats{
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+}
+.whats img{
+    width: 20px;
+}
+
+.allin{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    gap: 850px;
+
+}
+
+
+.toplf{
+    font-size: 30px;
+    color: black;
+}
+.toplf img{
+    width: 100px;
+    
+    /* height: 2px; */
+}
+.work{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    color: rgb(46, 45, 45);
+    
+}
+.work h1{
+    font-size: 35px;
+    position: relative;
+    top: 150px;
+    
+}
+.work p{
+    font-size: 20px;
+    position: relative;
+    top: 170px;
+}
+.span{
+    display: flex;
+    flex-direction: column;
+    margin-left: 230px;
+    cursor: pointer;
+    
+}
+.span1{
+    border: 1px solid black;
+    width: 50px;
+    transition: .3s linear;
+}
+.span2{
+    border: 1px solid black;
+    margin-top: 10px;
+    width: 30px;
+    transform: translateX(20px);
+    transition: .3s linear;
+    
+}
+.all1{
+    background: #F5F4FC;
+    height: 170vh;
+    padding: 80px;
+}
+.main{
+    display: grid;
+    justify-content: center;
+    grid-template-columns:repeat(3,1fr);
+    gap: 20px;
+}
+.main1{
+    background: transparent;
+    width: 400px;
+    height: 300px;
+}
+.main3{
+    background: #F9F8FD;
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    overflow:hidden ;
+}
+.main img{
+    width: 100%;
+}
+.main4{
+    background: #FFFFFF;
+    height: 40%;
+    width: 100%;
+    overflow: hidden;
+}
+.main4 h1,a{
+    position: relative;
+    top: 40px;
+    left: 40px;
+    color: transparent;
+}
+.main4 a{
+    text-decoration: none;
+    position: relative;
+    top: 50px;
+    color: #000;
+    cursor: pointer;
+    
+}
+.pop{
+    width: 100%;
+    background: #000;
+    height: 20px;
+    position: relative;
+    top: 100px;
+    transition: .6s linear;
+}
+.main1:hover{
+    margin-top: -8px;
+    transition: .6s ease-in-out;
+}
+.main1:hover .pop{
+    transform: scale(2000%);
+}
+.main1:hover .main4 h1,a{
+    color: white;
+    z-index: 999;
+    transition: .9s linear;
+}
+.main1:hover .main4 a{
+    color: #75ecfc;
+}
+.item{
+    background: #000;
+    height: 80vh;
+    padding: 50px;
+    width: 100%;
+}
+.endpart{
+    display: flex;
+    align-items: center;
+    gap: 500px;
+
+}
+.endpart a{
+    text-decoration: none;
+    align-items: center;
+    color: #75ecfc;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+.sayhello{
+    display: grid;
+    flex-direction: column;
+    width: 40px;
+    gap: 30px;
+
+}
+.mywork{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    transform: translateY(80px);
+}
+.pp p{
+    color: white;
+    cursor: auto;
+    
+}
+.hr{
+    color: #75ecfc;
+    transform: translateY(200px);
+
+}
+.myname{
+    transform: translateY(210px);
+    display: flex;
+    gap: 800px;
+}
+.tw{
+    display: flex;
+    gap: 30px;
+}
+.tw img{
+    width: 30px;
+}
+.tw a{
+    text-decoration: none;
+    color: #75ecfc;
+    cursor: pointer;
+}
+
+@media (min-width: 321px) and (max-width: 767px){
+    .all{
+      flex-direction: column;
+    } 
+
+    .allin{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 100%;
+       position: fixed;
+       z-index: 999;
+       /* height: 100%; */
+       /* position: relative; */
+       top: -5px;
+       right: 18px;
+       gap: 0px;
+
+    } 
+
+    .toplf{
+       margin-right: -50px;
+       font-size: 20px;
+    }
+    .toplf img{
+        width: 80px;
+    }
+    .main3 img{
+        overflow: hidden;
+        width: 100%;
+        height: 180px;
+    }
+       
+    
+    .all .work p{
+        position: relative;
+        top: 30px;
+    }
+    .all1 .main{
+        display: flex;
+        place-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .all1 .main1{
+        width: 350px;
+        border: 1px solid black;
+        
+    }
+    .all1{
+        width: 100%;
+        padding: 0px;
+        position: relative;
+        height: auto;
+        top: -60px;
+      
+    }
+    .item{
+       display: flex;
+       flex-direction: column;
+       background: black;
+       height: auto;
+       width: 100%;
+       padding: 0px;
+       height: 100vh;
+       /* position: relative; */
+       /* top: 630px; */
+
+    }
+
+    .endpart{
+       flex-direction: column;
+       width: 100%;
+       padding: 0px;
+       gap: 0px;
+
+    }
+    .sayhello{
+      position: relative;
+      right: 100px;
+    }
+
+    .mywork{
+      position: relative;
+      right: 60px;
+    }
+  
+
+    .myname{
+      flex-direction: column;
+      gap: 60px;
+      position: relative;
+      top: 40px;
+    }
+
+    .chineche{
+       transform: translateX(35px);
+       margin-top: -25px;
+       width: 50%;
+    }
+
+    .tw{
+      margin-left: 20px;
+    
+    }
+  
+
+    
+}
