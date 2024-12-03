@@ -20,6 +20,28 @@ body{
     display: none;
 }
 
+#mytest{
+    height: 100px;
+}
+
+#cursor{
+    animation: blink .8s linear infinite;
+}
+.text-display{
+    display: flex;
+    align-items: center;
+
+}
+
+@keyframes blink {
+    from{
+        opacity: 0.2%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
 
 header{
     color: #75ecfc;
@@ -150,9 +172,6 @@ a{
     color: #75ecfc;
     width: 75%;
 }
-.hero-left h1{
-    animation: shift .9s linear;
-}
 @keyframes shift{
     0%{
         transform: translateY(200px);
@@ -219,14 +238,12 @@ a{
     font-size: 18px;
     position: relative;
     top: 30px;
-    animation: shift .9s linear;
 
 }
 .back-end{
     font-size: 18px;
     position: relative;
     top: 300px;
-    animation: shift .9s linear;
 
 }
 
@@ -247,7 +264,6 @@ a{
 .years h1{
     color: #75ecfc;
     font-size: 60px;
-    animation: shift .9s linear;
 
 }
 .years p{
@@ -312,14 +328,12 @@ a{
     width: 100%;
     background: #ffff;
     padding: 60px;
-    animation: shift .9s linear;
 
 }
 .buld-section .write{
     width: 100%;
     background: #ffff;
     padding: 60px;
-    animation: shift .9s linear;
 
 }
 .buld h1{
@@ -404,7 +418,6 @@ a{
 .input-section .send-message{
     position: relative;
     top: -100px;
-    animation: shift .9s linear;
 
 }
 .input-section .send-message h1{

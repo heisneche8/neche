@@ -23,3 +23,22 @@ boot.addEventListener('click', function(e){
     // document.getElementById("logo").textContent = ""
 // }
 
+const text = document.getElementById("mytest")
+let counter = 0;
+let mytext = "developer.";
+
+function textDisplay(){
+    
+    if(counter<mytext.length){
+        text.textContent+=mytext[counter];
+        counter++;
+
+    }else if(counter>=mytext.length){
+        text.textContent="";
+        counter = 0;
+    }
+    
+    setTimeout(textDisplay, 300)
+}
+textDisplay();
+
