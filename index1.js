@@ -42,3 +42,18 @@ function textDisplay(){
 }
 textDisplay();
 
+const writer = document.getElementById("writer")
+let index = 0;
+let textwriter = "I'm a fullstack developer.";
+
+function reader(){
+    if(index < textwriter.length){
+        writer.textContent+=textwriter[index]
+        index++;
+    }else if(index >= textwriter.length){
+        writer.textContent=""
+        index=0;
+    }
+    setTimeout(reader,300)
+}
+reader();

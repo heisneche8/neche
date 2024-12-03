@@ -708,6 +708,7 @@ input{
         margin-top: -40px;
         /* background: red; */
         /* animation: move .3s; */
+        height: 100px;
     }
     .mobile-top-content p{
         color: whitesmoke;
