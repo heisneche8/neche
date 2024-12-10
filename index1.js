@@ -57,3 +57,11 @@ function reader(){
     setTimeout(reader,300)
 }
 reader();
+
+
+window.addEventListener('load',function(){
+    setTimeout(()=>{
+        document.getElementById('loader').style.display= 'none';
+        
+    },3000)
+})
