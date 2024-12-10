@@ -8,3 +8,10 @@ tap.addEventListener('click', function(e){
     drop.classList.toggle("show");
     tap.classList.toggle("menu")
 })
+
+window.addEventListener('load',function(){
+    setTimeout(()=>{
+        document.getElementById('loader').style.display= 'none';
+        
+    },3000)
+})
