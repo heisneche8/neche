@@ -398,6 +398,9 @@ body{
       margin-left: 20px;
     
     }
+    .loader img{
+        width: 200px;
+    }
   
 
     
